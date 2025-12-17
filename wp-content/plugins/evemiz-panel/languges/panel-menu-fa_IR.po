@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: evemiz-panel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-11 23:23+0000\n"
+"PO-Revision-Date: 2025-12-11 23:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: فارسی\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.3; php-8.1.10\n"
+"X-Domain: panel-menu"
+
+#. Author of the plugin
+msgid "abedini abbas"
+msgstr "عباس عابدینی"
+
+#. Name of the plugin
+msgid "evemiz-panel"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://evemiz.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "این یک افزونه تست و آموزش حساب کاربری هست"
+msgstr ""

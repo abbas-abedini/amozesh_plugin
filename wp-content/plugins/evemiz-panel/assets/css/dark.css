@@ -1,0 +1,46 @@
+body {
+    background: #0f0f11;
+    color: #eaeaea;
+}
+
+.header {
+    background: #1a1a1d;
+    box-shadow: none;
+}
+
+.mobile-menu {
+    background: #1a1a1d;
+    color: #ddd;
+}
+
+.account-header {
+    background: #222;
+}
+
+.sidebar,
+.stat-box,
+.course-card {
+    background: #1c1c20;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.05);
+}
+
+.menu li {
+    border-color: #333;
+}
+
+.menu li:hover {
+    color: #8b7bff;
+}
+
+.section-title {
+    color: #fff;
+}
+
+.switch-btn {
+    background: #333;
+    color: #fff;
+}
+
+.switch-btn:hover {
+    background: #444;
+}

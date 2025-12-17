@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب کاربری</title>
+
+    <!-- فونت -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- استایل اصلی -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- استایل دارک مود -->
+    <link rel="stylesheet" href="dark.css" id="dark-style" disabled>
+</head>
+<body>
+
+<!-- هدر سایت -->
+<header class="header">
+    <div class="container header-inner">
+
+        <div class="logo">WebKima</div>
+
+        <!-- دکمه منوی موبایل -->
+        <div class="menu-btn" id="menu-btn">☰</div>
+
+        <!-- دکمه‌های سمت راست -->
+        <div class="header-actions">
+            <button id="toggle-dark" class="switch-btn">🌙</button>
+            <button id="toggle-dir" class="switch-btn">⇆</button>
+        </div>
+
+    </div>
+</header>
+
+<!-- منوی موبایل -->
+<nav class="mobile-menu" id="mobile-menu">
+    <ul>
+        <li>پیشخوان</li>
+        <li>دوره‌های من</li>
+        <li>سفارش‌ها</li>
+        <li>دانلودها</li>
+        <li>علاقه‌مندی‌ها</li>
+        <li>جزئیات حساب</li>
+        <li>پشتیبانی</li>
+        <li class="logout">خروج</li>
+    </ul>
+</nav>
+
+<!-- هدر بخش حساب -->
+<section class="account-header">
+    <h2>حساب کاربری</h2>
+</section>
+
+<main class="container layout">
+
+    <!-- نوار کناری -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="https://i.imgur.com/dxjd7fb.png" class="avatar" alt="">
+            <h3>aabedini</h3>
+        </div>
+
+        <ul class="menu">
+            <li>پیشخوان</li>
+            <li>دوره‌های من</li>
+            <li>سفارش‌ها</li>
+            <li>دانلودها</li>
+            <li>علاقه‌مندی‌ها</li>
+            <li>جزئیات حساب</li>
+            <li>پشتیبانی</li>
+            <li class="logout">خروج از حساب</li>
+        </ul>
+    </aside>
+
+    <!-- محتوای اصلی -->
+    <section class="content">
+
+        <!-- باکس‌های آمار -->
+        <div class="stats">
+            <div class="stat-box">
+                <span>📨</span>
+                <p>تعداد نظرات</p>
+                <strong>0 نظر ثبت کرده‌اید</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>💳</span>
+                <p>موجودی کیف پول</p>
+                <strong>0 تومان</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>🎞️</span>
+                <p>تعداد دوره‌ها</p>
+                <strong>1 دوره</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>💎</span>
+                <p>همراه‌کیمیا</p>
+                <strong>1121 امتیاز</strong>
+            </div>
+        </div>
+
+        <!-- دوره‌ها -->
+        <h3 class="section-title">دوره های آموزشی</h3>
+        <div class="courses">
+
+            <div class="course-card">
+                <img src="https://i.imgur.com/O5F4Qpg.jpeg" alt="">
+                <h4>آموزش برنامه‌نویسی قالب وردپرس</h4>
+            </div>
+
+            <div class="course-card">
+                <img src="https://i.imgur.com/j2zDDJp.jpeg" alt="">
+                <h4>آموزش امنیت وردپرس</h4>
+            </div>
+
+        </div>
+
+        <!-- آموزش‌های رایگان -->
+        <h3 class="section-title">آموزش‌های رایگان</h3>
+        <div class="courses small">
+
+            <div class="course-card">
+                <img src="https://i.imgur.com/Hp8E4Uo.jpeg" alt="">
+                <h4>ووکامرس چیست؟</h4>
+            </div>
+
+            <div class="course-card">
+                <img src="https://i.imgur.com/s6o0k96.jpeg" alt="">
+                <h4>آموزش نصب AMP در وردپرس</h4>
+            </div>
+
+            <div class="course-card">
+                <img src="https://i.imgur.com/RMf0uf0.jpeg" alt="">
+                <h4>ویجت چیست؟</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- جاوااسکریپت -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "wp-api/price-block",
+  "title": "قیمت پست",
+  "category": "widgets",
+  "icon": "money",
+  "description": "نمایش فیلد سفارشی قیمت",
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js"
+}
