@@ -41,7 +41,7 @@ function add_menu_plugin() {
  'wpdp_users_vip_page' // تابع callback
  );
 }
-// نوع دیگری از کد پایین 
+// نوع دیگری از کد پایین
 // function main_menu_page() {
     // echo '<h1>تنظیمات صفحه بالا</h1>';
 // $activate_plugin=null;
@@ -66,12 +66,12 @@ function add_menu_plugin() {
 
 function main_menu_page() {
     // $option=get_option('wp_amozesh_api');
+    // کد پایین اگر اینجا باشد تیک باید رفرش کنیم تا بیاد پس میبریم بیرون کد پایین تر
     // $is_plugin_activ=get_option('wp_amozesh_api');
     // var_dump($option);
    $activate_plugin=0;
     if(isset($_POST['submit'])){
 //    Determine if plugin is activated
-    // $activate_plugin = isset($_POST['activate_plugin']) ? 1 : 0;
     $activate_plugin = isset($_POST['activate_plugin']) ? 1 : 0;
 
     // Save or update the option in WordPress
@@ -94,11 +94,11 @@ function main_menu_page() {
 
 
     // include  WP_API_PATH . 'admin/templates/general.php' ;
-// 
+//
 // }
 function wpdp_menu_page() {
 
-//    create userآموزش 
+//    create userآموزش
 // $password = wp_generate_password(10); // generate a random 10-character password
 // $user_id  = wp_create_user('usertest', $password, 'usertest@gmail.com');
 
@@ -142,7 +142,7 @@ function wpdp_menu_page() {
     // 'nickname'=>'یورز آموزشی'
 // ]);
 
-// آموزش wp_delete_user 
+// آموزش wp_delete_user
 // wp_delete_user(2);
 
 
@@ -169,7 +169,7 @@ function wpdp_menu_page() {
     }
 
     // Handle add action
-    
+
 if ( $action === 'add' ) {
     if ( isset($_POST['submit']) ) {
         global $wpdb;
@@ -194,9 +194,9 @@ if ( $action === 'add' ) {
     global $wpdb;
 
     $id = intval($_GET['id']);
-    
-    
-    
+
+
+
 
     if ( isset($_POST['edit_form']) ) {
         $firstname = sanitize_text_field($_POST['firstname']);
@@ -257,7 +257,7 @@ if ( isset($_GET['action']) && $_GET['action'] === 'delete' ) {
 }
 
 
-     $users = $wpdb->get_results("SELECT ID,user_email,user_login,user_registered FROM 
+     $users = $wpdb->get_results("SELECT ID,user_email,user_login,user_registered FROM
 {$wpdb->users}");
     //  var_dump($users)
         include WP_API_PATH . '/admin/templates/vip-users.php';
