@@ -1,5 +1,5 @@
-<?php 
-/*Plugin Name:             "amozesh-plugin " 
+<?php
+/*Plugin Name:             "amozesh-plugin "
 Plugin URI:                  https:/evemiz.com/
 Description:            این یک افزونه تست و آموزشی هست
 Version: 1.0.0
@@ -7,6 +7,7 @@ Author:abedini abbas
 Author URI: https://evemiz.comlr
 Text Domain: amozesh
 */
+// نام پلاگین بعلاوه path
 define('AMOZESH_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('AMOZESH_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('AMOZESH_PLUGIN_VERSION', '1.0.0');
@@ -17,7 +18,7 @@ define('AMOZESH_PLUGIN_VERSION', '1.0.0');
 // echo AMOZESH_PLUGIN_URL;
 
 function amozesh_activation(){
-//   do somting wen plugin activat  
+//   do somting wen plugin activat
 }
 function amozesh_deactivation(){
 //   do somting wen plugin deactivat
