@@ -17,12 +17,10 @@ function check_user_loggedin( $atts, $content = "" ){
 //    }else{
     // return 'برای دانلود فایل وارد حساب کاربری خود شوید ';
 //    };
-
 //   return "محتوا=$content ";
-  return  "تست دو شورت کد";
+// برای اینکه do shortcod اعمال شود بالایی هارو کامنت کردم
+return  "تست دو شورت کد";
 }
 add_shortcode('no_loggin','check_user_loggedin');
 
-// کد پایین برای اینجا نیست برای صفحه نوشته است
-// [no_loggin  pruduct_id=10  title='this is title ']
 echo do_shortcode('[no_loggin]');
