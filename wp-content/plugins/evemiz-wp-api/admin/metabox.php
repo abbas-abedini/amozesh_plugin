@@ -33,9 +33,28 @@ function wp_api_save_price($post_id){
             sanitize_text_field($_POST['wp_api_evemiz'])
         );
 
-        // add_post_meta 
+        // add_post_meta
 // delet_post _meta
     }
 }
 add_action('save_post','wp_api_save_price');
+
+// بعد از کدهای بالا برای نشان دادن متاباکس در فرانت کد زیر را در single.phpقالبمون درجای مناسب برای نشان دادن میزاریم
+
+
+// <?php
+// // نمایش قیمت در صفحه تکی و آرشیو
+// add_action('astra_entry_content_after', 'wp_api_show_price_archive');
+
+// function wp_api_show_price_archive() {
+//     $post_id = get_the_ID();
+//     if (!$post_id) return;
+
+//     $price = get_post_meta($post_id, 'wp_api_evemiz', true);
+
+//     if (!empty($price)) {
+//         echo '<p class="custom-price">💰 قیمت: ' . esc_html($price) . '</p>';
+//     }
+// }
+
 
