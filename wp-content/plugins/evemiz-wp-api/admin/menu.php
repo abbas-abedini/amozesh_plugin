@@ -90,7 +90,7 @@ function main_menu_page() {
 }
 
 // function general_menu_page() {
-    echo '<h1>تنظیمات عمومی بالا</h1>';
+    // echo '<h1>تنظیمات عمومی بالا</h1>';
 
 
     // include  WP_API_PATH . 'admin/templates/general.php' ;
@@ -173,7 +173,7 @@ function wpdp_menu_page() {
 if ( $action === 'add' ) {
     if ( isset($_POST['submit']) ) {
         global $wpdb;
-
+// firstname اولی از دیتابیس ودومی از فرم هست وبقیه هم همینطور
         $firstname = sanitize_text_field($_POST['firstname']);
         $lastname  = sanitize_text_field($_POST['lastname']);
         $mobil    = sanitize_text_field($_POST['mobil']); // مطمئن شوید نام ستون همین است
