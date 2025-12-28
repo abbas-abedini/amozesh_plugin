@@ -120,10 +120,11 @@ function wp_api_evemiz_styles() {
         'ajax_url' => admin_url('admin-ajax.php')
     )
 );
-
+// با هوک پایین فقط به فرانت اضافه میشوند
 wp_enqueue_script('evemiz-wp-api-script');
 
 
 }
 add_action('wp_enqueue_scripts', 'wp_api_evemiz_styles');
+// با هوک پایین به ادمین اضافه میشود
 add_action('admin_enqueue_scripts', 'wp_api_evemiz_styles');
