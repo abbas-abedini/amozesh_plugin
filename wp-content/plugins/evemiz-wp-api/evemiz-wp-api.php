@@ -15,6 +15,7 @@ define('WP_API_URL', plugin_dir_url(__FILE__));
 define('WP_API_VERSION', '1.0.0');
 
 function wp_api_activation() {
+    // add_option( ,evemiz_wp_api_title','عنوان تست' );
     // ساخت نقش جدید
     add_role(
         'seo_manager1',
@@ -26,15 +27,17 @@ function wp_api_activation() {
         ]
     );
 
-    // اضافه کردن قابلیت جدید به نقش
+    // اضافه کردن قابلیت جدید بجز نقش اولیه که در add_rolدادیم به نقش
     $role = get_role('seo_manager1');
     if ($role) {
         $role->add_cap('edit_pages'); // مثال: اضافه کردن قابلیت ویرایش برگه‌ها
     }
 }
+// یعنی اگر یوزر فعلی دسترسی به کاری دارد اونوقت اجازه انجام چیری بده
 // if(current_user_can('edite_posts'));
 
 function wp_api_deactivation() {
+    // delete_option( 'evemiz_wp_api_title' );
     // حذف نقش هنگام غیرفعال‌سازی
     remove_role('seo_manager1');
 }
@@ -53,9 +56,9 @@ require WP_API_PATH.'admin/ajax.php';
 
 /**
  * Registers a stylesheet.
- */   
-  
-  
+ */
+
+
 // function wp_api_evemiz_styles() {
 
       // wp_register_style('evemiz-wp-api-bootstrap',$style_url1)
@@ -87,22 +90,29 @@ require WP_API_PATH.'admin/ajax.php';
     //  array(),               // Dependencies
     //  '1.0.0',               // Version
 //    true                  // load in foter
-    
+
 //  )
 
 
 
-
+// افزودن css , js
 function wp_api_evemiz_styles() {
-    // CSS
-    $style_url = plugin_dir_url(__FILE__) . 'assets/css/style.css';
+    // افزودنdependenciمثل bootstrap,غیره
+
+    // $style_bootstrap = plugin_dir_url(__FILE__) . 'assets/css/bootstrap.css';
+    // اولی نام و دومی آدرس فایلمون بعد هم اگه داشتیم کتابخانه
+//   wp_register_style('wp-api-bootstrap', $style_bootstrap, [], '1.0.0', 'all');
+    // wp_enqueue_style('wp-api-bootstrap');
+
+// cssافزودنداخل کروشه خالی [wpapi_bootstrap]رو میزاریم
+   $style_url = plugin_dir_url(__FILE__) . 'assets/css/style.css';
     wp_register_style('evemiz-wp-api-style', $style_url, [], '1.0.0', 'all');
     wp_enqueue_style('evemiz-wp-api-style');
 
     // JS
     $script_url = plugin_dir_url(__FILE__) . 'assets/js/main.js';
     wp_register_script('evemiz-wp-api-script', $script_url, ['jquery'], '1.0.0', true);
-    
+
         wp_localize_script(
     'evemiz-wp-api-script',
     'may_ajax_object',

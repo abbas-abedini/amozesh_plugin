@@ -256,7 +256,7 @@ if ( isset($_GET['action']) && $_GET['action'] === 'delete' ) {
 
 }
 
-
+// داخل پرانتز پایین اسامی رو از wp_user دیتابیس میاریم
      $users = $wpdb->get_results("SELECT ID,user_email,user_login,user_registered FROM
 {$wpdb->users}");
     //  var_dump($users)
