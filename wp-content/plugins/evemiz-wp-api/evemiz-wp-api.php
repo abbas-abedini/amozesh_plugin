@@ -104,7 +104,7 @@ function wp_api_evemiz_styles() {
 //   wp_register_style('wp-api-bootstrap', $style_bootstrap, [], '1.0.0', 'all');
     // wp_enqueue_style('wp-api-bootstrap');
 
-// cssافزودنداخل کروشه خالی [wpapi_bootstrap]رو میزاریم
+// cssافزودن داخل کروشه خالی [wpapi_bootstrap]رو میزاریم
    $style_url = plugin_dir_url(__FILE__) . 'assets/css/style.css';
     wp_register_style('evemiz-wp-api-style', $style_url, [], '1.0.0', 'all');
     wp_enqueue_style('evemiz-wp-api-style');
@@ -125,6 +125,7 @@ wp_enqueue_script('evemiz-wp-api-script');
 
 
 }
+// با پایینی هم styleمیشه اضافه کرد هم script
 add_action('wp_enqueue_scripts', 'wp_api_evemiz_styles');
 // با هوک پایین به ادمین اضافه میشود
 add_action('admin_enqueue_scripts', 'wp_api_evemiz_styles');
