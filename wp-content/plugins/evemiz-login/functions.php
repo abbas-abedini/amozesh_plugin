@@ -47,7 +47,7 @@ add_shortcode('evemiz_logedin', 'evemiz_login_shortcode');
 
 
 // -------------------- لاگین --------------------
-
+// nopriveبرای کاربرانی که هنوز وارد حساب نشدند
 add_action('wp_ajax_evemiz_login', 'evemiz_login_handle_ajax');
 add_action('wp_ajax_nopriv_evemiz_login', 'evemiz_login_handle_ajax');
 
@@ -77,7 +77,7 @@ if (!$validate_result['is_valid']) {
     ]);
 
     if (is_wp_error($login_result)) {
-        
+
         wp_send_json_error(['message' => 'نام کاربری یا رمز عبور اشتباه است']);
     }
 
